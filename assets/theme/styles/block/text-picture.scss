@@ -21,3 +21,29 @@
     }
   }
 }
+
+@media all and (max-width:767px) {
+  .block-text-picture {
+    .column {padding:0;
+      &.half {max-width: 100%}
+      &.third {max-width: 100%}
+      &.two-thirds {max-width: 100%}
+    }
+    .picture-container {
+      +.text-container {margin-top:15px;}
+    }
+    .text-container {
+      +.picture-container {margin-top:15px;}
+    }
+    &.picture-text {
+      &.float {
+        figure {float:none;margin:0 25px 15px;}
+      }
+    }
+    &.text-picture {
+      &.float {
+        .column {float:none;margin:0 25px 15px;}
+      }
+    }
+  }
+}
