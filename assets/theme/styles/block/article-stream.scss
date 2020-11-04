@@ -9,8 +9,8 @@
   .article-thumb {position:relative; padding-bottom:46%;flex:0 0 50%;max-width:none; margin-bottom:0;
     img {width:100%;object-fit:cover; position:absolute; left:0; top:0; height:100%;}
   }
-  .article-content {flex:0 0 calc(50% - 75px);align-self: center; padding:0 0 0 100px;}
-  .article-teaser { font-size:$fontSize2;}
+  .article-content {flex:0 0 calc(50% - 100px);align-self: center; padding:0 0 0 100px;}
+  .article-teaser { font-size:$fontSize2;line-height: 1.35em;}
   .article-date { font-size:$fontSize1;}
   .article-title { font-weight:$bold; margin-bottom:20px; margin-top:0;}
   .btn { margin-top:40px;}
