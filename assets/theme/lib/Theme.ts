@@ -7,6 +7,7 @@ export default class Theme implements InitializerInterface
     public init(element: HTMLElement)
     {
         $(() => {
+            this.initHeroSlider(element);
             this.initNavigation(element);
             this.showDiffBillAddressForm(element);
             this.handleLoadingCursor(element);
@@ -15,6 +16,19 @@ export default class Theme implements InitializerInterface
             this.handleShopGallery(element);
             this.initGallery(element);
         })
+    }
+
+    private initHeroSlider(element: HTMLElement)
+    {
+        $('[data-hero-slider]').slick({
+            autoplay: true,
+            arrows: false,
+            speed: 800,
+            autoplaySpeed: 10000,
+            fade:true,
+            adaptiveHeight: true,
+            dots: true
+        });
     }
 
     private initGallery (element: HTMLElement)
