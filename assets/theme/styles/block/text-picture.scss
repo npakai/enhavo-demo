@@ -1,6 +1,23 @@
 .block-text-picture {
+  .column {padding:0 25px;
+    &.half {max-width: 50%}
+    &.third {max-width: 33.333%}
+    &.two-thirds {max-width: 66.666%}
+  }
   figure {
     img {max-width: 100%}
     figcaption { font-style:$italic; font-family:$serifFontFamily; font-size:$fontSize3; font-weight:$medium;}
+  }
+  &.picture-text {
+    &.float {
+      .title {padding-left:25px;}
+      figure {float:left;margin:0 50px 50px 0;}
+    }
+  }
+  &.text-picture {
+    &.float {
+      .title, p {padding-left:25px;}
+      .column {float:right;margin:0 0 50px 50px;}
+    }
   }
 }
