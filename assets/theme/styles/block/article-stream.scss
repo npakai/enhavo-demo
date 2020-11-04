@@ -6,10 +6,10 @@
     }
     +article { margin-top:0;}
   }
-  .article-thumb {position:relative; padding-bottom:46%;flex:50%;max-width:none; margin-bottom:0;
+  .article-thumb {position:relative; padding-bottom:46%;flex:0 0 50%;max-width:none; margin-bottom:0;
     img {width:100%;object-fit:cover; position:absolute; left:0; top:0; height:100%;}
   }
-  .article-content {flex:50%;align-self: center; padding:0 0 0 100px;}
+  .article-content {flex:0 0 calc(50% - 75px);align-self: center; padding:0 0 0 100px;}
   .article-teaser { font-size:$fontSize2;}
   .article-date { font-size:$fontSize1;}
   .article-title { font-weight:$bold; margin-bottom:20px; margin-top:0;}
@@ -25,9 +25,9 @@
       }
     }
   }
-  .pagination {justify-content: center;
+  .pagination {justify-content: center;display: flex;margin-top:100px;
     li {
-      a { border:1px solid #e6e6e6; padding:4px 15px; font-size:$fontSize1; text-transform:uppercase; min-width:38px; height:38px; font-weight:$medium; line-height:29px; color:darken(#e6e6e6, 30%);transition:all .2s}
+      a { border:1px solid #e6e6e6; padding:4px 15px; font-size:$fontSize1; text-transform:uppercase; min-width:38px; height:38px; font-weight:$medium; line-height:29px; color:darken(#e6e6e6, 30%);transition:all .2s;text-decoration:none;}
       +li { margin-left:-1px;}
       &.active { position:relative; z-index:1;
         a { border-color:$black; color:$black; font-weight:$semibold;}
