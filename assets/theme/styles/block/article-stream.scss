@@ -27,7 +27,7 @@
   }
   .pagination {justify-content: center;display: flex;margin-top:100px;
     li {
-      a { border:1px solid #e6e6e6; padding:4px 15px; font-size:$fontSize1; text-transform:uppercase; min-width:38px; height:38px; font-weight:$medium; line-height:29px; color:darken(#e6e6e6, 30%);transition:all .2s;text-decoration:none;}
+      a { border:1px solid #e6e6e6; padding:8px 15px; font-size:$fontSize1; text-transform:uppercase; min-width:38px; height:38px; font-weight:$medium; line-height:29px; color:darken(#e6e6e6, 30%);transition:all .2s;text-decoration:none;}
       +li { margin-left:-1px;}
       &.active { position:relative; z-index:1;
         a { border-color:$black; color:$black; font-weight:$semibold;}

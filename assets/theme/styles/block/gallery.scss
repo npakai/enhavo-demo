@@ -1,8 +1,22 @@
 @import "~slick-carousel/slick/slick.css";
 
-.block-gallery {
+.block-gallery {padding:40px 0;
   img {width:100%}
-  .slider {max-width: 650px}
+  .slider {max-width: 650px;
+    .slick-slide {height:auto;}
+  }
+  .slick-dots {display:flex;flex-flow: row wrap; z-index:1;justify-content: center;margin-top:45px;
+    li {
+      button {background:none; border:1px solid $black;width:12px;height:12px;display:block;text-indent: -999px;padding:0;overflow:hidden;cursor:pointer;border-radius:50%;
+        &:focus {outline: 0}
+      }
+      &.slick-active {
+        button {background:$black;}
+      }
+      +li { margin-left:10px}
+    }
+  }
+
 }
 
 @media all and (max-width:767px) {
